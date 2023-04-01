@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Code02_BubbleSort: LeetCode {
+class Code02_BubbleSort: LeetCode {
     
-    static func run() {
+    override func run() {
         let testTime = 500
         let maxSize = 100
         let maxValue = 100
@@ -29,7 +29,7 @@ struct Code02_BubbleSort: LeetCode {
         print(succeed ? "success": "fail")
     }
     
-    static func bubbleSort(arr: [Int]) -> [Int] {
+    func bubbleSort(arr: [Int]) -> [Int] {
         guard arr.count > 1 else {
             return []
         }
@@ -42,34 +42,5 @@ struct Code02_BubbleSort: LeetCode {
             }
         }
         return resultArr
-    }
-    
-    static func swap(arr: [Int], aIndex: Int, bIndex: Int) -> [Int] {
-        guard aIndex < arr.endIndex, bIndex < arr.endIndex else {
-            return arr
-        }
-        var result = arr
-        let a = arr[aIndex]
-        result[aIndex] = arr[bIndex]
-        result[bIndex] = a
-        return result
-    }
-    
-    static func comparator(arr: [Int]) -> [Int] {
-        arr.sorted()
-    }
-    
-    static func generateRandomArray(maxSize: Int, maxValue: Int) -> [Int] {
-        var arr = [Int]()
-        arr.reserveCapacity(maxSize)
-        (0...maxSize).forEach({ _ in
-            arr.append((0...maxValue).randomElement() ?? 0)
-        })
-        return arr
-    }
-    
-    static func printArray(arr: [Int]) {
-        let str = arr.map({ "\($0)" }).joined(separator: " ")
-        print(str)
     }
 }

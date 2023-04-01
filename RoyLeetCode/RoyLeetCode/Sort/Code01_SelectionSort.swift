@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Code01_SelectionSort: LeetCode {
+class Code01_SelectionSort: LeetCode {
     
-    static func run() {
+    override func run() {
         let testTime = 500
         let maxSize = 100
         let maxValue = 100
@@ -29,7 +29,7 @@ struct Code01_SelectionSort: LeetCode {
         print(succeed ? "success": "fail")
     }
     
-    static func selectionSort(arr: [Int]) -> [Int] {
+    func selectionSort(arr: [Int]) -> [Int] {
         guard arr.count > 1 else {
             return arr
         }
@@ -44,23 +44,5 @@ struct Code01_SelectionSort: LeetCode {
             resultArr.swapAt(i, minIndex)
         }
         return resultArr
-    }
-    
-    static func comparator(arr: [Int]) -> [Int] {
-        arr.sorted()
-    }
-    
-    static func generateRandomArray(maxSize: Int, maxValue: Int) -> [Int] {
-        var arr = [Int]()
-        arr.reserveCapacity(maxSize)
-        (0...maxSize).forEach({ _ in
-            arr.append((0...maxValue).randomElement() ?? 0)
-        })
-        return arr
-    }
-    
-    static func printArray(arr: [Int]) {
-        let str = arr.map({ "\($0)" }).joined(separator: " ")
-        print(str)
     }
 }

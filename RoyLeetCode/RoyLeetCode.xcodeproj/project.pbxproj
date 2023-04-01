@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04F1E2629D82D6100FEC9E9 /* Code03_InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F1E2529D82D6100FEC9E9 /* Code03_InsertionSort.swift */; };
 		B06EE6EB271F130700D40A36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EE6EA271F130700D40A36 /* main.swift */; };
 		B0BC232D2723BD1700D030AD /* Code01_SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC232C2723BD1700D030AD /* Code01_SelectionSort.swift */; };
 		B0BC232F2723BD4800D030AD /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC232E2723BD4800D030AD /* LeetCode.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B04F1E2529D82D6100FEC9E9 /* Code03_InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code03_InsertionSort.swift; sourceTree = "<group>"; };
 		B06EE6E7271F130700D40A36 /* RoyLeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoyLeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06EE6EA271F130700D40A36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B0BC232C2723BD1700D030AD /* Code01_SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code01_SelectionSort.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				B0BC232C2723BD1700D030AD /* Code01_SelectionSort.swift */,
 				B0BC23302732D1C700D030AD /* Code02_BubbleSort.swift */,
+				B04F1E2529D82D6100FEC9E9 /* Code03_InsertionSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04F1E2629D82D6100FEC9E9 /* Code03_InsertionSort.swift in Sources */,
 				B0BC232D2723BD1700D030AD /* Code01_SelectionSort.swift in Sources */,
 				B06EE6EB271F130700D40A36 /* main.swift in Sources */,
 				B0BC23312732D1C700D030AD /* Code02_BubbleSort.swift in Sources */,

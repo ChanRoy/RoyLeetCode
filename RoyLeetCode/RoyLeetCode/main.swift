@@ -7,5 +7,5 @@
 
 import Foundation
 
-Code01_SelectionSort.run()
+Code03_InsertionSort().run()
 
